@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Juego de azar</title>
+  </head>
+  <body>
+    <main>
+      
+      <h2 class="endGame hidden">Juego Terminado</h2>
+      <section class="jugador jugador0 player--active">
+        <h2 class="name" id="jugador0">Jugador 1</h2>
+        <p class="score" id="dado-jugador-0">0</p>
+        
+        <div class="current">
+          <p class="current-label">Puntuaje</p>
+          <p class="current-score" id="score0">0</p>
+        </div>
+      </section>
+      <section class="jugador jugador1">
+        <h2 class="name" id="jugador1">Jugador 2</h2>
+        <p class="score" id="dado-jugador-1">0</p>
+        <div class="current">
+          <p class="current-label">Puntuaje</p>
+          <p class="current-score" id="score1">0</p>
+        </div>
+      </section>
+
+      <section>
+        <img src="dice-1.png" alt="Playing dice" class="dice" />
+        <button id="newGame" class="btn btn--new">🔄 Nuevo juego</button>
+        <button id="rollDice" class="btn btn--roll">🎲 Tirar dado</button>
+        <button id="cambiarJugador" class="btn btn--hold">📥 Cambiar usuario</button>
+      </section>
+    </main>
+
+  
+    <!-- The Modal -->
+   <div id="myModal" class="modal">
+    <!-- Modal content -->
+     <div class="modal-content">
+       <span class="close">&times;</span>
+       <h1 class="errorMessage nonAttempts hidden">Jugador ya no puede lanzar </h1>
+      </div>
+   </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
